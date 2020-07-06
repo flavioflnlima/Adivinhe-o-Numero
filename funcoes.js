@@ -16,22 +16,6 @@ function enviar() {
       ultimoResultado.style.backgroundColor = "green";
       baixoOuAlto.textContent = "";
     }
-
-    numTurno++;
-  } else {
-    ultimoResultado.innerHTML = "Suas chances acabaram";
-    ultimoResultado.style.color = "red";
-  }
-}
-
-function enviar2() {
-  if (numTurno === 1 || numTurno <= 10) {
-    if (Number(campoPalpite.value) == numAleatorio) {
-      ultimoResultado.textContent = "Parabéns";
-      ultimoResultado.style.backgroundColor = "green";
-      baixoOuAlto.textContent = "";
-    }
-
     numTurno++;
   } else {
     ultimoResultado.innerHTML = "Suas chances acabaram";
