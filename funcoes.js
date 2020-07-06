@@ -11,16 +11,17 @@ var btnReinicio;
 
 function enviar() {
   if (numTurno === 1 || numTurno <= 10) {
-    console.log(campoPalpite.value);
+    
     if (Number(campoPalpite.value) == numAleatorio) {
       ultimoResultado.textContent = "Parabéns";
       ultimoResultado.style.backgroundColor = "green";
       baixoOuAlto.textContent = "";
     }
+
     numTurno++;
+
   } else {
-    ultimoResultado.innerHTML = "ja chega";
+    ultimoResultado.innerHTML = "Suas chances acabaram";
     ultimoResultado.style.color = "red";
   }
 }
-//teste
